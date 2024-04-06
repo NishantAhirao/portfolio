@@ -13,7 +13,7 @@
     right: 0;
     z-index: -1;
     object-fit: cover;
-    height: 100vh;
+    height:100vh;
 }
 
 .IntroContent{
@@ -43,23 +43,32 @@
     letter-spacing: 1px;
 }
 
+.introBtns{
+    display: flex;
+    
+}
+
 .btn{
     background: white;
     margin: 1rem 0;
     padding: 0.75rem 2rem;
     border: none;
     border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
 }
 
 .btnImg{
 object-fit: cover;
-margin: 0 0.25rem;
+margin-right: 0.5rem;
 height: 1rem;
 }
 
 @media screen and (max-width:840px){
     .bg{
-        right: -20vw;
+        right: -10vw;
     }
     .IntroContent{
         font-size: 8vw;
@@ -67,11 +76,27 @@ height: 1rem;
     .hello{
         font-size: 4.5vw;
     }
+    .introBtns{
+        flex-direction: column;
+    
+    }
+    .btn{
+        margin: 0.4rem 0rem;
+
+    }
+
+    
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:580px){
     .bg{
-        right: -50vw;
+        right: -20vw;
+    }
+   
+}
+@media screen and (max-width:350px){
+    .bg{
+        right: -40vw;
     }
    
 }
