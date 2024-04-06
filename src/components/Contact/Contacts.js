@@ -60,9 +60,9 @@ Some of the notable companies I have worked with includes
             <h1 className='contactPageTitle'>Contact Me</h1>
             <span className='contactDesc'>Please fill out the form below to discuss any work opportunities.</span>
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
-                <input type='text' className='name' placeholder='your name' name='your_name'></input>
-                <input type='email' className='email' placeholder='your email' name='your_email'></input>
-                <textarea name='message' className='msg' rows='5' placeholder='your message'></textarea>
+                <input type='text' className='name' placeholder='your name' name='your_name' required></input>
+                <input type='email' className='email' placeholder='your email' name='your_email' required></input>
+                <textarea name='message' className='msg' rows='5' placeholder='your message' required></textarea>
                 <button type='submit' value='Send'  className='submitBtn'>Submit</button>
 
                 <div className='links'>
