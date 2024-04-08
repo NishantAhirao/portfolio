@@ -5,6 +5,7 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    font-size: 8vw;
 }
 
 .bg{
@@ -20,45 +21,94 @@
     height: 100vh;
     width: 100vw;
     padding: 2rem;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 0;
+    
 
 }
 
+.textCont{
+display: flex;
+flex-direction: column;
+
+}
 .hello{
     font-size: 1.75rem;
     font-weight: 100;
+    /* background: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(10px); */
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 2rem;
 }
 
 .IntroName{
-    color: yellow;
+    color: rgb(0, 0, 0);
+    /* background: rgba(185, 185, 185, 0.504);
+    backdrop-filter: blur(10px); */
+}
+
+.IntroText{
+    /* background: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(10px); */
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 2rem;
 }
 .IntroPara{
     font-size: medium;
     font-weight: 300;
     /* max-width: 50%; */
     letter-spacing: 1px;
+    /* background: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(10px); */
+
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 2rem;
+
+        
 }
 
 .introBtns{
     display: flex;
-    
+    /* transition: all 300; */
 }
 
 .btn{
     background: white;
     margin: 1rem 0;
-    padding: 0.75rem 2rem;
+    padding-right: 1.5rem;
+    padding-left: 1rem;
     border: none;
     border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 1rem;
+    border: 2px solid black;
+    /* transition: black 0.3s ease; */
 }
+
+.btn:hover{
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+   transition: all 300 ease;
+}
+
+
 
 .btnImg{
 object-fit: cover;
@@ -66,16 +116,30 @@ margin-right: 0.5rem;
 height: 1rem;
 }
 
+.btn{
+    transition: all 300ms ease;
+}
+
 @media screen and (max-width:840px){
     .bg{
         right: -10vw;
     }
-    .IntroContent{
-        font-size: 8vw;
+
+    .textCont{
+      
     }
+    .IntroContent{
+        font-size: 7vw;
+        
+    }
+   
     .hello{
         font-size: 4.5vw;
     }
+
+  
+
+    
     .introBtns{
         flex-direction: column;
     

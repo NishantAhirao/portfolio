@@ -1,5 +1,5 @@
 .navbar{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     height: 5rem;
     width: 100vw;
     max-width: 75rem;
@@ -12,36 +12,47 @@
     position:sticky;
     top:0;
     z-index: 5;
+   
 }
 
-.logo{
-    object-fit: cover;
-    height: 3rem;
-    width:4rem;
+.webName{
+    margin: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-style: italic;
+  text-align: center;
+  /* border-bottom: 3px solid black; */
+
 }
 
+.webName:hover{
+    cursor: default;
+}
 .deskMenuListItem{
     margin: 1rem;
-    color: white;
+    color: rgb(145, 145, 145);
     cursor: pointer;
 
 }
 .deskMenuListItem:hover{
-    color: yellow;
+    color: rgb(0, 0, 0);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid rgb(0, 0, 0);
 }
 
 .deskMenuBtn{
     background: white;
-    margin: 1rem 0;
-    padding: 0.75rem 2rem;
+    /* margin: 1rem 0; */
+    font-size: 0.9rem;
+    padding: 0rem 1rem;
     border: none;
+    color: black;
     border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 1rem;
+    border: 2px solid black;
 
 }
 
@@ -52,11 +63,18 @@
     margin-right: 0.5rem;
    
 }
+.deskMenuBtn:hover,.deskMenuImg:hover {
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    /* transition: all 100ms ease-in; */
+}
 
 .active{
-    color: yellow;
+    color: rgb(0, 0, 0);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid rgb(0, 0, 0);
 }
 
 .mobMenu{
@@ -92,10 +110,17 @@
 
 
 }
+.navMenu{
+    display: none;
+}
+
+Link, .deskMenuBtn{
+    transition: all 300ms ease;
+}
 
 @media screen and (max-width:780px) {
     .navbar{
-        background: rgb(30, 30, 30);
+        background: rgb(255, 255, 255);
         height: 3rem;
         
     }
@@ -103,14 +128,24 @@
         object-fit: cover;
         height: 2rem;
         width:2.5rem;
+        color: black;
+        
     }
     .mobMenu{
         display: flex;
         height: 1.5rem;
+        /* background: white; */
 
+    }
+
+    .navMenu{
+        background: rgba(185, 185, 185, 0.504);
+        backdrop-filter: blur(10px)
     }
     .deskMenu{
         display: none;
+        /* background: white; */
+        
     }
     .deskMenuBtn{
         display: none;
@@ -119,5 +154,6 @@
         display: flex;
         text-align: center;
         justify-content: center;
+        background: white;
     }
 }
