@@ -130,7 +130,7 @@ height: 1rem;
       
     }
     .IntroContent{
-        font-size: 7vw;
+        font-size: 5vw;
         
     }
    
@@ -156,6 +156,13 @@ height: 1rem;
 @media screen and (max-width:580px){
     .bg{
         right: -20vw;
+    }
+    .IntroContent{
+        font-size: 7vw;
+        
+    }
+    .IntroPara{
+        font-size: 3.5vw;
     }
    
 }
