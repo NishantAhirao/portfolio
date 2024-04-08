@@ -44,7 +44,7 @@ flex-direction: column;
     width: fit-content;
     background-color: rgba(255, 255, 255, 0.504);
     backdrop-filter: blur(10px);
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
 }
 
@@ -60,7 +60,7 @@ flex-direction: column;
     width: fit-content;
     background-color: rgba(255, 255, 255, 0.504);
     backdrop-filter: blur(10px);
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
 }
 .IntroPara{
@@ -74,7 +74,7 @@ flex-direction: column;
     width: fit-content;
     background-color: rgba(255, 255, 255, 0.504);
     backdrop-filter: blur(10px);
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
 
         
@@ -107,6 +107,13 @@ flex-direction: column;
     /* border: 2px solid white; */
     cursor: pointer;
    transition: all 300 ease;
+}
+
+.unicons2{
+    
+    color: black;
+    margin: 0 0.5rem;
+    font-size: 2rem;
 }
 
 
@@ -146,9 +153,16 @@ height: 1rem;
     
     }
     .btn{
-        margin: 0.4rem 0rem;
+        margin: 0.2rem 0rem;
 
     }
+
+    .unicons2{
+    
+        /* margin: 0 0.5rem; */
+        font-size: 1.4rem;
+    }
+    
 
     
 }
@@ -166,10 +180,24 @@ height: 1rem;
     }
    
 }
+
+@media screen and (max-width:400px){
+   
+    .introBtns2{
+        display: flex;
+        flex-direction: column;
+        
+      
+    }
+   
+}
+
+
 @media screen and (max-width:350px){
     .bg{
         right: -40vw;
     }
+   
    
 }
 

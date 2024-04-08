@@ -28,10 +28,18 @@ const Intro = () => {
             <p className='IntroPara'>pursuing bachelor's in computer engineering. Working on full stack / MERN development.</p>
             </div>
             <div className='introBtns'>
-            <Link><button className='btn' onClick={handleDownload}><i class="uil uil-file-download-alt unicons"></i>Download Resume</button></Link>
+              <Link><button className='btn' onClick={handleDownload}><i class="uil uil-file-download-alt unicons"></i>Download CV</button></Link>
 
-            <Link to='contact' spy={true} smooth={true}  offset={-50} duration={500}><button className='btn'><i class="uil uil-briefcase-alt unicons"></i>Hire Me</button></Link>
+              <Link to='contact' spy={true} smooth={true}  offset={-50} duration={500}><button className='btn'><i class="uil uil-briefcase-alt unicons"></i>Hire Me</button></Link>
             </div>
+            <div className='introBtns2'>
+              <a href='https://www.linkedin.com/in/nishant-ahirao-036a12220/' target='_blank'><i class="uil uil-linkedin unicons2"></i></a>
+              <a href='https://github.com/NishantAhirao' target='_blank'><i class="uil uil-github unicons2"></i></a>
+            
+            
+            </div>
+            
+            
         </div>
         <div className='circle'>
         <img src={bg} alt='' className='bg'></img>
