@@ -110,7 +110,7 @@
     
 }
 
-@media screen and (max-width:840px) {
+@media screen and (max-width:480px) {
     .skillDesc{
         font-size: 3vw;
         padding: 0;
