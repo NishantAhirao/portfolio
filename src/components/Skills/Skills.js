@@ -8,8 +8,7 @@ const Skills = () => {
   return (
     <section id='skills'>
             <span className='skillTitle'>What I Do</span>
-            <span className='skillDesc'>I am Nishant Ahirao. Currently pursuing bachelor's degree in computer engineering. Working on full stack / MERN development. I am very
-enthusiastic about learning new things in devWorld. I am just starting my development journey with this small step.</span>
+            
 <div className='skillBars'>
             <div className='skillBar'>
                 <img src={UIDesign} alt='UIDesign' className='skillBarImg'></img>

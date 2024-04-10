@@ -16,15 +16,10 @@
     font-weight: 600;
     padding-top: 3rem;
     margin-bottom: 1.5rem;
+    
 }
 
-.skillDesc{
-    font-size: 1rem;
-    font-weight: 300;
-    max-width: 50rem;
-    padding:0 2rem;
-    /* margin-bottom: 1.5rem; */
-}
+
 
 .skillBars{
     margin: 1.5rem;

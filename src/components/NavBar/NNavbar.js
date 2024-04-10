@@ -30,7 +30,7 @@ function NNavbar() {
       <div className='webName'>NA</div>
       <div className='deskMenu'>
         <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='deskMenuListItem'>Home</Link>
-        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='deskMenuListItem'>About</Link>
+        <Link activeClass='active' to='AboutMe' spy={true} smooth={true} offset={10} duration={500} className='deskMenuListItem'>About</Link>
         <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='deskMenuListItem'>Portfolio</Link>
         <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-50} duration={500} className='deskMenuListItem'>Client</Link>
       </div>
@@ -46,7 +46,7 @@ function NNavbar() {
 
       <div className='navMenu' style={{ display: showMenu && windowWidth < 780 ? 'flex' : 'none' }}>
         <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-60} duration={500} className='ListItem' onClick={() => setShowMenu(!showMenu)}>Home</Link>
-        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={5} duration={500} className='ListItem' onClick={() => setShowMenu(!showMenu)}>About</Link>
+        <Link activeClass='active' to='AboutMe' spy={true} smooth={true} offset={5} duration={500} className='ListItem' onClick={() => setShowMenu(!showMenu)}>About</Link>
         <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='ListItem' onClick={() => setShowMenu(!showMenu)}>Portfolio</Link>
         <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-50} duration={500} className='ListItem' onClick={() => setShowMenu(!showMenu)}>Client</Link>
         <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} className='ListItem' onClick={() => setShowMenu(!showMenu)}>Contact</Link>
