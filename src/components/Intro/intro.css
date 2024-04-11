@@ -170,7 +170,7 @@ height: 1rem;
 
 @media screen and (max-width:580px){
     .bg{
-        right: -20vw;
+        right: -50vw;
     }
     .IntroContent{
         font-size: 7vw;
@@ -182,7 +182,7 @@ height: 1rem;
    
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:480px){
    
     .bg{
         right: -40vw;

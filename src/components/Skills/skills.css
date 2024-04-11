@@ -11,10 +11,15 @@
     margin-top: 4rem;
 }
 
+.skillsIntro{
+    font-weight: 300;
+    padding-top: 3rem;
+    margin-top: 10px;
+}
+
 .skillsTitle{
     font-size: 3rem;
     font-weight: 600;
-    padding-top: 3rem;
     margin-bottom: 1.5rem;
     
 }

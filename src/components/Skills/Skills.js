@@ -1,7 +1,7 @@
 import React from 'react'
 import './skills.css'
 
-import { SiPowerbi } from 'react-icons/si';
+// import { SiPowerbi } from 'react-icons/si';
 
 
 import reacticon from '../../assets/react.png'
@@ -37,6 +37,7 @@ const Skills = () => {
 
   return (
     <section id='skills'>
+      <p className='skillsIntro'>Here are some of</p>
       <h2 className='skillsTitle '>My Skills</h2>
       <ul className='mySkillsList '>
         {
