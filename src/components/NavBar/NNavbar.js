@@ -59,7 +59,7 @@ function NNavbar() {
 
         <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-10} duration={500} className='ListItem' onClick={() => setShowMenu(!showMenu)}>Projects</Link>
         
-        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-40} duration={500} className='ListItem' onClick={() => setShowMenu(!showMenu)}>Contact</Link>
+        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-30} duration={500} className='ListItem' onClick={() => setShowMenu(!showMenu)}>Contact</Link>
       </div>
     </nav>
   );
