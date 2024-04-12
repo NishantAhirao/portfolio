@@ -8,7 +8,7 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 .skillsIntro{
@@ -49,6 +49,9 @@
     justify-content: center;
 }
 
+.singleSkill:hover{
+    box-shadow: 0px 1px 0.2px -4px rgba(1, 1, 1, 0.2), 1px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+}
 
 .skillsIcons{
     height: 1.5rem;

@@ -1,7 +1,7 @@
 #contactPage{
     min-height: calc(100vh - 4 rem);
     width: 100vw;
-    max-width: 60rem;
+    max-width: 40rem;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -19,34 +19,8 @@
 
 }
 
-.clientDesc{
-    font-weight: 300;
-    font-size: 1rem;
-}
-
-.clientImgs{
-    margin: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.clientImg{
-    object-fit: cover;
-    width: 23%;
-    min-width: 9rem;
-    margin: auto;
-    padding: 0.25rem;
-
-    /* border: none; */
-
-}
 
 
-#clients{
-    /* margin-top: 3rem; */
-    /* padding: 2rem; */
-}
 
 .contactDesc{
     /* margin-top: 3rem; */
@@ -62,7 +36,7 @@
     align-items: center;
     justify-content: center;
     width: 90vw;
-    max-width: 60rem;
+    max-width: 50rem;
 }
 .name, .email, .msg{
     font-size: medium;
@@ -80,6 +54,10 @@
         backdrop-filter: blur(10px);
 }
 
+.msg{
+    min-height: 15rem;
+}
+
 .submitBtn{
     margin: 2rem 0;
 padding: 0.75rem 3.5rem;
@@ -88,6 +66,7 @@ background: white;
 border-radius: 2rem;
 font-size: 1rem;
 box-shadow: 0px 3px 1px -2px rgba(11, 11, 11, 0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+margin-bottom: 0.5rem;
 
 }
 
@@ -101,13 +80,62 @@ box-shadow: 0px 3px 1px -2px rgba(11, 11, 11, 0.2), 0px 2px 2px 0px rgba(0,0,0,0
 
 .links{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
 
 }
 
 .link{
     object-fit: cover;
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
     margin: 0 0.75rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.contactandlinks{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .contactandlinks{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        margin-bottom: 1rem;
+    
+    }
+    
+    .link{
+        object-fit: cover;
+        height: 2rem;
+        width: 2rem;
+        /* margin: 0 0.75rem; */
+        font-size: 2rem;
+        margin: 0.5rem;
+        color: black;
+        cursor: pointer;
+    }
+
+    .msg{
+        min-height: 20rem;
+    }
 }

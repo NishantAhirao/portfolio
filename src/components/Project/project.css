@@ -44,11 +44,16 @@
 
 }
 .article{
-    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1rem;
   margin-bottom: 20px;
   border-radius: 0.5rem;
   box-shadow: 0px 3px 1px -2px rgba(11, 11, 11, 0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
- width: 20rem;
+ width: 80%;
+
+ padding: 1rem;
 
 
 }
@@ -64,6 +69,31 @@
     font-size: 0.8rem;
 }
 
+.projectTags{
+    font-weight: 300;
+    margin: 0 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 3rem;
+}
+
+.projectTag{
+    padding: 0.2rem 0.8rem;
+    margin: 0.2rem 0.4rem;
+    background:rgb(145, 145, 145);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.projectTag:hover{
+    cursor: default;
+
+
+}
+
 .projectBtns{
     /* border: 2px solid rebeccapurple; */
     display: flex;
@@ -76,9 +106,9 @@
 
 .projectBtn{
     background: white;
-    margin: 0.5rem 0;
-    padding-right: 1.5rem;
-    padding-left: 1rem;
+    margin: 0.5rem 0.2rem;
+    padding-right: 1rem;
+    padding-left: 0.75rem;
     
     border: none;
     border-radius: 2rem;
@@ -101,17 +131,115 @@
 
 .projectImg{
     object-fit: cover;
-    height: 10rem;
-    width: 18rem;
+    height: 15rem;
+    width: 27rem;
     margin: 0.5rem;
 }
 
+/* Add this to your project.css file */
+
+.video-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Higher z-index to ensure it appears over other content */
+  }
+  
+  .video-modal {
+    position: relative;
+    width: 90%; /* Adjust the width of the modal as needed */
+    max-width: 800px; /* Set a max-width for the modal */
+    /* background-color: #fff; */
+    border-radius: 8px;
+    /* padding: 2px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    /* background-color: rgba(214, 214, 214, 0.821);
+    backdrop-filter: blur(50px); */
+  }
+  
+  .close-modal-btn {
+    position: relative;
+    
+    /* bottom: 10px; */
+    left: 49%; /* Adjust the left position */
+    /* transform: translate(-50%, -50%); */
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  
+  /* background: rgba(255, 255, 255, 0.821);
+  backdrop-filter: blur(50px); */
+  padding: 0;
+  }
+  
+  .video-container {
+    position: relative;
+    /* object-fit: cover; */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 25px;
+    height: 0;
+   
+    /* border: 2px solid red; */
+   
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0.5rem
+  }
+  
 
 
-@media screen and (max-width:1140px) {
-    /* .details-container{
-        flex-direction: column;
-    } */
+
+@media screen and (max-width:1050px) {
+    .details-container{
+        /* border: 3px solid yellow; */
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .article{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        /* margin:1rem; */
+      margin-bottom: 20px;
+      border-radius: 0.5rem;
+      box-shadow: 0px 3px 1px -2px rgba(11, 11, 11, 0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+     width: 30rem;
+    
+     padding: 0.3rem;
+    
+    
+    }
+
+    .projectImg{
+        object-fit: cover;
+        height: 10rem;
+        width: 18rem;
+        margin: 0.5rem;
+    }
+   
+    .projectTags{
+        
+        margin: 1rem 1rem;
+    }
 }
 
 

@@ -1,9 +1,12 @@
 import React,{useRef} from 'react'
 import './contact.css'
-import walmart from '../../assets/walmart.png';
-import adobe from '../../assets/adobe.png';
-import microsoft from '../../assets/microsoft.png';
-import facebook from '../../assets/facebook.png';
+
+import { FaFacebookSquare, FaTwitter, FaInstagramSquare, FaYoutubeSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+
+import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiFillYoutube, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+
+import { TwitterIcon } from 'react-icons';
+
 
 import facebookIcon from '../../assets/facebook-icon.png';
 import twitterIcon from '../../assets/twitter.png';
@@ -38,42 +41,40 @@ const Contacts = () => {
 
   return (
     <section id='contactPage'>
-        <div id='clients'>
-            <h1 className='contactPageTitle'>My clients</h1>
-            <p className='clientDesc'>
-            I have had the opportunity to work with a diverse group of companies.
-Some of the notable companies I have worked with includes
-            </p>
-            
-            <div className='clientImgs'>
-                <img src={walmart} alt='walmart' className='clientImg'></img>
-                <img src={adobe} alt='adobe' className='clientImg'></img>
-                <img src={microsoft} alt='microsoft' className='clientImg'></img>
-                <img src={facebook} alt='facebook' className='clientImg'></img>
-
-
-            </div>
-            
-        </div>
+       
 
         <div id='contact'>
-            <h1 className='contactPageTitle'>Contact Me</h1>
+        <div className='contactandlinks'>
+            
+            
+            <div className='links'>
+                <a href='https://github.com/NishantAhirao' target='_blank'><AiFillGithub  className='link'/></a>
+                <a href='https://www.linkedin.com/in/nishant-ahirao-036a12220/' target='_blank'><FaLinkedin  className='link'/></a>
+                <a href='https://x.com/AhiraoNishant01?t=wSO4jKKAgCYjvRIxrllZCQ&s=09' target='_blank'><i className="fa-brands fa-x-twitter link"></i></a>
+               
+                <a href='https://www.instagram.com/nishant_ahirao_001' target='_blank'><AiFillInstagram  className='link'/></a>
+                <a href='https://youtube.com/@nishantahirao001?si=uxMaldouALrLOMhQ' target='_blank'><AiFillYoutube  className='link'/></a>
+                     
+
+
+
+
+
+
+                </div>
+                <div>
+                
+                <h1 className='contactPageTitle'>Contact Me</h1>
             <span className='contactDesc'>Please fill out the form below to discuss any work opportunities.</span>
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
                 <input type='text' className='name' placeholder='your name' name='your_name' required></input>
                 <input type='email' className='email' placeholder='your email' name='your_email' required></input>
                 <textarea name='message' className='msg' rows='5' placeholder='your message' required></textarea>
                 <button type='submit' value='Send'  className='submitBtn'>Submit</button>
-
-                <div className='links'>
-                    <img src={facebookIcon} alt='facebook' className='link'></img>
-                    <img src={twitterIcon} alt='twitter' className='link'></img>
-                    <img src={youtube} alt='youtube' className='link'></img>
-                    <img src={insta} alt='instagram' className='link'></img>
-
+              </form>
+               
                 </div>
-
-            </form>
+                </div>
 
         </div>
     </section>
