@@ -17,7 +17,7 @@
 }
 
 .deskMenu{
-    margin-left: 8rem;
+    margin-left: 4rem;
 }
 
 .webName{
@@ -26,7 +26,7 @@
     font-size: 1.5rem;
     font-style: italic;
   text-align: center;
-  /* margin-left: 4rem; */
+  margin-left: 4rem;
   /* border-bottom: 3px solid black; */
 
 }
@@ -151,6 +151,9 @@ Link, .deskMenuBtn{
     .deskMenu{
         margin-left: 4rem;
     }
+    .webName{
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width:780px) {
@@ -159,6 +162,7 @@ Link, .deskMenuBtn{
         height: 3rem;
         
     }
+    
     .logo{
         object-fit: cover;
         height: 2rem;
