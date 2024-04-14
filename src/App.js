@@ -2,7 +2,7 @@ import About from './components/About/About';
 import Contacts from './components/Contact/Contacts';
 import Footer from './components/Footer/Footer';
 import Intro from './components/Intro/Intro';
-import MyClients from './components/MyClients/MyClients';
+// import MyClients from './components/MyClients/MyClients';
 import Navbar from './components/NavBar/NNavbar';
 import Project from './components/Project/Project';
 import Skills from './components/Skills/Skills';

@@ -33,8 +33,8 @@ const Intro = () => {
               <Link to='contact' spy={true} smooth={true}  offset={-50} duration={500}><button className='btn'><i className="uil uil-briefcase-alt unicons"></i>Hire Me</button></Link>
             </div>
             <div className='introBtns2'>
-              <a href='https://www.linkedin.com/in/nishant-ahirao-036a12220/' target='_blank'><i className="uil uil-linkedin unicons2"></i></a>
-              <a href='https://github.com/NishantAhirao' target='_blank'><i className="uil uil-github unicons2"></i></a>
+              <a href='https://www.linkedin.com/in/nishant-ahirao-036a12220/' target='_blank' rel="noreferrer"><i className="uil uil-linkedin unicons2"></i></a>
+              <a href='https://github.com/NishantAhirao' target='_blank' rel="noreferrer"><i className="uil uil-github unicons2"></i></a>
             
             
             </div>

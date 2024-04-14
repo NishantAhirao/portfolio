@@ -1,17 +1,9 @@
 import React,{useRef} from 'react'
 import './contact.css'
 
-import { FaFacebookSquare, FaTwitter, FaInstagramSquare, FaYoutubeSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import {   FaLinkedin } from 'react-icons/fa';
 
-import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiFillYoutube, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-
-import { TwitterIcon } from 'react-icons';
-
-
-import facebookIcon from '../../assets/facebook-icon.png';
-import twitterIcon from '../../assets/twitter.png';
-import youtube from '../../assets/youtube.png';
-import insta from '../../assets/instagram.png';
+import {  AiFillInstagram, AiFillYoutube, AiFillGithub  } from 'react-icons/ai';
 
 import emailjs from '@emailjs/browser';
 
@@ -48,12 +40,12 @@ const Contacts = () => {
             
             
             <div className='links'>
-                <a href='https://github.com/NishantAhirao' target='_blank'><AiFillGithub  className='link'/></a>
-                <a href='https://www.linkedin.com/in/nishant-ahirao-036a12220/' target='_blank'><FaLinkedin  className='link'/></a>
-                <a href='https://x.com/AhiraoNishant01?t=wSO4jKKAgCYjvRIxrllZCQ&s=09' target='_blank'><i className="fa-brands fa-x-twitter link"></i></a>
+                <a href='https://github.com/NishantAhirao' target='_blank' rel="noreferrer"><AiFillGithub  className='link'/></a>
+                <a href='https://www.linkedin.com/in/nishant-ahirao-036a12220/' target='_blank' rel="noreferrer"><FaLinkedin  className='link'/></a>
+                <a href='https://x.com/AhiraoNishant01?t=wSO4jKKAgCYjvRIxrllZCQ&s=09' target='_blank' rel="noreferrer"><i className="fa-brands fa-x-twitter link"></i></a>
                
-                <a href='https://www.instagram.com/nishant_ahirao_001' target='_blank'><AiFillInstagram  className='link'/></a>
-                <a href='https://youtube.com/@nishantahirao001?si=uxMaldouALrLOMhQ' target='_blank'><AiFillYoutube  className='link'/></a>
+                <a href='https://www.instagram.com/nishant_ahirao_001' target='_blank' rel="noreferrer"><AiFillInstagram  className='link'/></a>
+                <a href='https://youtube.com/@nishantahirao001?si=uxMaldouALrLOMhQ' target='_blank'  rel="noreferrer"><AiFillYoutube  className='link'/></a>
                      
 
 
