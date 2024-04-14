@@ -34,6 +34,7 @@
 .textCont{
 display: flex;
 flex-direction: column;
+text-shadow: 1px 1px 1px rgb(255, 255, 255); 
 
 }
 .hello{
@@ -42,27 +43,43 @@ flex-direction: column;
     /* background: rgba(255, 255, 255, 0.504);
     backdrop-filter: blur(10px); */
     width: fit-content;
-    background-color: rgba(255, 255, 255, 0.504);
-    backdrop-filter: blur(10px);
+ 
     padding: 0.5rem;
     border-radius: 1rem;
 }
 
-.IntroName{
-    color: rgb(0, 0, 0);
-    /* background: rgba(185, 185, 185, 0.504);
-    backdrop-filter: blur(10px); */
-}
+
+
 
 .IntroText{
     /* background: rgba(255, 255, 255, 0.504);
     backdrop-filter: blur(10px); */
     width: fit-content;
-    background-color: rgba(255, 255, 255, 0.504);
-    backdrop-filter: blur(10px);
+    
+    color: rgb(255, 191, 0);
     padding: 0.5rem;
     border-radius: 1rem;
 }
+.hello2{
+    font-size: 2rem;
+    padding: 0.5rem;
+    width: fit-content;
+    /* background-color: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(10px); */
+    border-radius: 1rem;
+    
+}
+
+.typing{
+    color: rgb(255, 191, 0);
+    text-shadow: 1rem;
+   
+    
+}
+.cursors{
+    color:rgb(255, 191, 0);
+}
+
 .IntroPara{
     font-size: medium;
     font-weight: 300;
@@ -72,10 +89,12 @@ flex-direction: column;
     backdrop-filter: blur(10px); */
 
     width: fit-content;
-    background-color: rgba(255, 255, 255, 0.504);
-    backdrop-filter: blur(10px);
+    /* background-color: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(10px); */
     padding: 0.5rem;
     border-radius: 1rem;
+    color: rgb(0, 0, 0); /* Text color */
+    text-shadow: 1px 1px 0px rgb(255, 255, 255); 
 
         
 }
@@ -133,7 +152,7 @@ height: 1rem;
 
 @media screen and (max-width:840px){
     .bg{
-        right: -10vw;
+        right: -20vw;
     }
 
    
@@ -144,6 +163,10 @@ height: 1rem;
    
     .hello{
         font-size: 4.5vw;
+    }
+    .hello2{
+        font-size: 5vw;
+        
     }
 
   
@@ -170,7 +193,7 @@ height: 1rem;
 
 @media screen and (max-width:580px){
     .bg{
-        right: -50vw;
+        right: -20vw;
     }
     .IntroContent{
         font-size: 7vw;

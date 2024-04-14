@@ -5,8 +5,16 @@ import bg from '../../assets/Nishant_wobg01.png'
 // import btnImg from '../../assets/hireme.png'
 // import btnImg2 from '../../assets/file.png'
 
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
+
 import { Link } from 'react-scroll'
 const Intro = () => {
+  
+const [typeEffect]= useTypewriter({
+words: ['CSE Undergrad ', 'DSA Enthusiast', 'Learner', 'Web Developer'] ,
+loop: {},
+typeSpeed: 100,
+deleteSpeed:40})
   const handleDownload = () => {
     
     const pdfUrl = 'https://drive.google.com/file/d/1yw4tyUr82x6znDh3iXmim8gTD8jCRHM4/view?usp=sharing';
@@ -23,8 +31,9 @@ const Intro = () => {
           <div className='textCont'>
 
           
-            <span className='hello'>Hello,</span>
-            <span className='IntroText'>I'm <span className='IntroName'>Nishant Ahirao</span> <br></br>website Designer</span>
+            <span className='hello'>Hello, This is me</span>
+            <span className='IntroText'>Nishant Ahirao</span>
+            <span className='hello2'>& I'm a <span className='typing'>{typeEffect}</span ><span style={{color:"#ffbf00"}}><Cursor className='cursors' ></Cursor></span></span>
             <p className='IntroPara'>pursuing bachelor's in computer engineering. Working on full stack / MERN development.</p>
             </div>
             <div className='introBtns'>
