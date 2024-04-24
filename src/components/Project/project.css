@@ -1,9 +1,6 @@
 #projects{
-    /* overflow: hidden; */
     width: 100vw;
     max-width: 65rem ;
-    
-   
     text-align: center;
     margin: 0 auto;
     margin-top: 4rem;
@@ -21,7 +18,6 @@
     margin-bottom: 1.5rem;
 }
 .projDesc{
-    /* border: 1px solid red; */
     width: fit-content;
 }
 
@@ -29,20 +25,15 @@
     object-fit: cover;
     height: 10rem;
     width: 20rem;
-    /* margin: 0.5rem; */
 }
 
-
-
 .details-container{
-    /* border: 3px solid yellow; */
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
+
 .article{
     display: flex;
     justify-content: center;
@@ -52,10 +43,7 @@
   border-radius: 0.5rem;
   box-shadow: 0px 3px 1px -2px rgba(11, 11, 11, 0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
  width: 80%;
-
  padding: 1rem;
-
-
 }
 
 .projectHeading{
@@ -90,33 +78,26 @@
 
 .projectTag:hover{
     cursor: default;
-
-
 }
 
 .projectBtns{
-    /* border: 2px solid rebeccapurple; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1rem;
 }
 
-
-
 .projectBtn{
     background: white;
     margin: 0.5rem 0.2rem;
     padding-right: 1rem;
     padding-left: 0.75rem;
-    
     border: none;
     border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 3px 1px -2px rgba(11, 11, 11, 0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
-    /* transition: black 0.3s ease; */
     transition: all 300ms ease;
 
 }
@@ -124,7 +105,6 @@
 .projectBtn:hover{
     background: rgb(0, 0, 0);
     color: white;
-    /* border: 2px solid white; */
     cursor: pointer;
    transition: all 300 ease;
 }
@@ -136,8 +116,6 @@
     margin: 0.5rem;
 }
 
-/* Add this to your project.css file */
-
 .video-modal-overlay {
     position: fixed;
     top: 0;
@@ -148,47 +126,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Higher z-index to ensure it appears over other content */
+    z-index: 1000; 
   }
   
   .video-modal {
     position: relative;
-    width: 90%; /* Adjust the width of the modal as needed */
-    max-width: 800px; /* Set a max-width for the modal */
-    /* background-color: #fff; */
+    width: 90%;
+    max-width: 800px; 
     border-radius: 8px;
-    /* padding: 2px; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-    /* background-color: rgba(214, 214, 214, 0.821);
-    backdrop-filter: blur(50px); */
   }
   
   .close-modal-btn {
     position: relative;
-    
-    /* bottom: 10px; */
-    left: 49%; /* Adjust the left position */
-    /* transform: translate(-50%, -50%); */
+    left: 49%;
   cursor: pointer;
   background: none;
   border: none;
   font-size: 30px;
   color: #ffffff;
-  
-  /* background: rgba(255, 255, 255, 0.821);
-  backdrop-filter: blur(50px); */
   padding: 0;
   }
   
   .video-container {
     position: relative;
-    /* object-fit: cover; */
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     padding-top: 25px;
     height: 0;
-   
-    /* border: 2px solid red; */
-   
   }
   
   .video-container iframe {
@@ -200,14 +163,9 @@
     border: 0;
     border-radius: 0.5rem
   }
-  
-
-
 
 @media screen and (max-width:1050px) {
     .details-container{
-        /* border: 3px solid yellow; */
-        
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -218,15 +176,11 @@
         display: block;
         justify-content: center;
         align-items: center;
-        /* margin:1rem; */
       margin-bottom: 20px;
       border-radius: 0.5rem;
       box-shadow: 0px 3px 1px -2px rgba(11, 11, 11, 0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
      width: 30rem;
-    
      padding: 0.3rem;
-    
-    
     }
 
     .projectImg{
@@ -237,17 +191,11 @@
     }
    
     .projectTags{
-        
         margin: 1rem 1rem;
     }
 }
 
-
-
-
 @media screen and (max-width:840px) {
-
-   
     .projectBtn{
         font-size: smaller;
         margin: 0.5rem 0;

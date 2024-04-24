@@ -27,35 +27,24 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 0;
-    
-
 }
 
 .textCont{
 display: flex;
 flex-direction: column;
 text-shadow: 1px 1px 1px rgb(255, 255, 255); 
-
 }
+
 .hello{
     font-size: 1.75rem;
     font-weight: 100;
-    /* background: rgba(255, 255, 255, 0.504);
-    backdrop-filter: blur(10px); */
     width: fit-content;
- 
     padding: 0.5rem;
     border-radius: 1rem;
 }
 
-
-
-
 .IntroText{
-    /* background: rgba(255, 255, 255, 0.504);
-    backdrop-filter: blur(10px); */
     width: fit-content;
-    
     color: rgb(255, 191, 0);
     padding: 0.5rem;
     border-radius: 1rem;
@@ -64,17 +53,12 @@ text-shadow: 1px 1px 1px rgb(255, 255, 255);
     font-size: 2rem;
     padding: 0.5rem;
     width: fit-content;
-    /* background-color: rgba(255, 255, 255, 0.504);
-    backdrop-filter: blur(10px); */
     border-radius: 1rem;
-    
 }
 
 .typing{
     color: rgb(255, 191, 0);
-    text-shadow: 1rem;
-   
-    
+    text-shadow: 1rem; 
 }
 .cursors{
     color:rgb(255, 191, 0);
@@ -83,17 +67,11 @@ text-shadow: 1px 1px 1px rgb(255, 255, 255);
 .IntroPara{
     font-size: medium;
     font-weight: 300;
-    /* max-width: 50%; */
     letter-spacing: 1px;
-    /* background: rgba(255, 255, 255, 0.504);
-    backdrop-filter: blur(10px); */
-
     width: fit-content;
-    /* background-color: rgba(255, 255, 255, 0.504);
-    backdrop-filter: blur(10px); */
     padding: 0.5rem;
     border-radius: 1rem;
-    color: rgb(0, 0, 0); /* Text color */
+    color: rgb(0, 0, 0); 
     text-shadow: 1px 1px 0px rgb(255, 255, 255); 
 
         
@@ -101,7 +79,6 @@ text-shadow: 1px 1px 1px rgb(255, 255, 255);
 
 .introBtns{
     display: flex;
-    /* transition: all 300; */
 }
 
 .btn{
@@ -115,15 +92,13 @@ text-shadow: 1px 1px 1px rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     margin-right: 1rem;
-    /* border: 2px solid black; */
     box-shadow: 0px 3px 1px -2px rgba(11, 11, 11, 0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
-    /* transition: black 0.3s ease; */
+    
 }
 
 .btn:hover{
     background: rgb(0, 0, 0);
     color: white;
-    /* border: 2px solid white; */
     cursor: pointer;
    transition: all 300 ease;
 }
@@ -154,11 +129,9 @@ height: 1rem;
     .bg{
         right: -20vw;
     }
-
    
     .IntroContent{
-        font-size: 5vw;
-        
+        font-size: 5vw; 
     }
    
     .hello{
@@ -169,9 +142,6 @@ height: 1rem;
         
     }
 
-  
-
-    
     .introBtns{
         flex-direction: column;
     
@@ -182,13 +152,8 @@ height: 1rem;
     }
 
     .unicons2{
-    
-        /* margin: 0 0.5rem; */
         font-size: 1.4rem;
-    }
-    
-
-    
+    } 
 }
 
 @media screen and (max-width:580px){
@@ -197,12 +162,10 @@ height: 1rem;
     }
     .IntroContent{
         font-size: 7vw;
-        
     }
     .IntroPara{
         font-size: 3.5vw;
     }
-   
 }
 
 @media screen and (max-width:480px){
@@ -213,11 +176,8 @@ height: 1rem;
 
     .introBtns2{
         display: flex;
-        flex-direction: column;
-        
-      
+        flex-direction: column;   
     }
-   
 }
 
 
