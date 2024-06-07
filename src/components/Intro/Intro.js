@@ -17,7 +17,7 @@ typeSpeed: 100,
 deleteSpeed:40})
   const handleDownload = () => {
     
-    const pdfUrl = 'https://drive.google.com/file/d/1yw4tyUr82x6znDh3iXmim8gTD8jCRHM4/view?usp=sharing';
+    const pdfUrl = 'https://drive.google.com/file/d/1RzLOszqnJve-CAZRVatGlY7fLlowyMzM/view?usp=sharing';
 
     window.open(pdfUrl, '_blank');
   };
