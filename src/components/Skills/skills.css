@@ -1,79 +1,93 @@
-#skills{
-    overflow: hidden;
-    width: 100vw;
-    max-width: 65rem ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 5rem;
+#skills {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem auto 0;
 }
 
-.skillsIntro{
-    font-weight: 300;
-    padding-top: 3rem;
-    margin-top: 10px;
+.skillsIntro {
+  font-weight: 300;
+  padding-top: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
 }
 
-.skillsTitle{
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
+.skillsTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-
-
-.mySkillsList{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.mySkillsList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0;
+  margin-bottom: 0.5rem;
 }
 
-.singleSkill{
-    text-decoration: none;
-    margin: 1rem ;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0px 3px 1px -2px rgba(11, 11, 11, 0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.singleSkill {
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
 }
 
-.singleSkill:hover{
-    box-shadow: 0px 1px 0.2px -4px rgba(1, 1, 1, 0.2), 1px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+.singleSkill:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
 }
 
-.skillsIcons{
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-right: 0.5rem;
+.skillsIcons {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.45rem;
 }
 
+@media screen and (max-width: 720px) {
+  .singleSkill {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.85rem;
+  }
 
-@media screen and (max-width:720px){
-    .singleSkill{
-       margin: 0.5rem 0.5rem;
-        
-    }
+  .skillsIcons {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  .skillsTitle {
+    font-size: 2.2rem;
+  }
 }
 
-@media screen and (max-width:480px){
-    .skillBarText>p{
-        font-size: 3vw;
-        font-weight: 400;
-        
-    }
-    .skillBarImg{
-        height: 2.25rem;
-        width: 2.25rem;
-        
-    }
-    .skillBarText>h2{
-        font-size: 5vw;
-    }
+@media screen and (max-width: 480px) {
+  .singleSkill {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .skillsIcons {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .skillsTitle {
+    font-size: 2rem;
+  }
+
+  .skillsIntro {
+    font-size: 0.85rem;
+  }
 }
