@@ -21,10 +21,10 @@ const Intro = () => {
     deleteSpeed: 40,
   });
   const handleDownload = () => {
-    
-    const pdfUrl = 'https://drive.google.com/file/d/1yw4tyUr82x6znDh3iXmim8gTD8jCRHM4/view?usp=sharing';
+    const pdfUrl =
+      "https://drive.google.com/file/d/1aqh41g3d_8c7xaNzbPXl86c7YGX3p7h4/view?usp=sharing";
 
-    window.open(pdfUrl, '_blank');
+    window.open(pdfUrl, "_blank");
   };
 
   return (
