@@ -56,19 +56,23 @@ const About = () => {
       description: (
         <div>
           <p>
-            <strong>Key Skills:</strong> Java 8 & 21, Spring Boot, Spring Data
-            JPA, Oracle, REST APIs, Microservices, Multithreading, Linux,
-            Payment Gateway Integrations.
+            <strong>Key Skills:</strong> Java (8 & 21), Spring Boot, Spring Data
+            JPA, JDBC, PL/SQL, Oracle, REST APIs, Microservices, Linux,
+            Multithreading, NSDL/CDSL, Payment Gateway Integrations.
             <br />
-            Architected and delivered scalable backend microservices powering
-            securities trading, settlement, banking, and depository operations,
-            leading the end-to-end MCX Commodity Trading integration with zero
-            critical production issues.
+            • Designed and delivered scalable RESTful microservices for
+            securities trading, banking, settlement, and depository operations,
+            enabling MCX, NSE Commodity, NCDEX, EGR, and MSE trading while
+            integrating NSDL/CDSL, banking partners, and payment gateways.
             <br />
-            Optimized high-performance systems by reducing payout processing
-            time by <strong>~70%</strong>, modernizing services to Java 21,
-            automating development workflows, and managing production
-            deployments across the complete SDLC.
+            • Led end-to-end delivery of the MCX Commodity Trading integration,
+            developed critical holdings, funds, payout, and settlement APIs,
+            optimized PL/SQL and migrated services from Java 8 to Java 21,
+            delivering a zero-critical-defect production go-live.
+            <br />• Improved FO-BO payout performance by **~70% (45s → 13s)**
+            using multithreading, automated development workflows reducing setup
+            time from **2+ hrs to less than 1 hr**, and managed Linux
+            deployments, production releases, and end-to-end SDLC activities.
           </p>
         </div>
       ),
