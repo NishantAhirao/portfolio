@@ -12,6 +12,8 @@ import { RiSchoolLine } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
 import { RiBankLine } from "react-icons/ri";
 // import { FaGraduationCap } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
+import { SiCoursera } from "react-icons/si";
 
 // import { GiTrophyCup } from 'react-icons/gi'; // Trophy Icon
 
@@ -20,8 +22,54 @@ import { RiCodeSSlashLine } from "react-icons/ri"; // Code Icon
 import "./about.css";
 
 const About = () => {
-  const [showAbout, setShowAbout] = useState(false);
+  const [showAbout, setShowAbout] = useState("experience");
   const [key, setKey] = useState(0); // Key to trigger re-rendering and animation
+
+  const certificationsData = [
+    {
+      title: "AWS Certified Cloud Practitioner (CLF-C02)",
+      location: "Amazon Web Services (AWS)",
+      description: (
+        <>
+          Validated foundational knowledge of AWS Cloud, including core services
+          (EC2, S3, RDS, IAM, VPC), cloud architecture principles, security,
+          networking, pricing models, and the AWS Well-Architected Framework.
+          <br />
+          <a
+            href="https://drive.google.com/file/d/1V0iV7CNLMbwkfK0iyHxOMmT7VDDbGjsA/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Certificate
+          </a>
+        </>
+      ),
+      icon: <FaAws />,
+      date: "Aug 2025",
+    },
+    {
+      title: "Machine Learning Specialization",
+      location: "Stanford University & DeepLearning.AI (Coursera)",
+      description: (
+        <>
+          Completed Andrew Ng's Machine Learning Specialization covering
+          supervised & unsupervised learning, neural networks, decision trees,
+          recommendation systems, clustering, anomaly detection, and practical
+          ML model development using Python.
+          <br />
+          <a
+            href="https://drive.google.com/file/d/1GcPY5d99aAQ9ZFVnzHtE1av3JIdEBdz7/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Certificate
+          </a>
+        </>
+      ),
+      icon: <SiCoursera />,
+      date: "Oct 2024",
+    },
+  ];
 
   const eduData = [
     {
@@ -82,34 +130,55 @@ const About = () => {
   ];
 
   const handleEducationClick = () => {
-    setShowAbout(true);
+    setShowAbout("education");
+    setKey((prevKey) => prevKey + 1); // Increment key to trigger re-rendering
+  };
+
+  const handleCertificationsClick = () => {
+    setShowAbout("certifications");
     setKey((prevKey) => prevKey + 1); // Increment key to trigger re-rendering
   };
 
   const handleExperienceClick = () => {
-    setShowAbout(false);
+    setShowAbout("experience");
     setKey((prevKey) => prevKey + 1); // Increment key to trigger re-rendering
   };
+
+  const timelineData =
+    showAbout === "education"
+      ? eduData
+      : showAbout === "experience"
+        ? exData
+        : certificationsData;
 
   return (
     <section id="AboutMe">
       <p className="headingIntro">Get to Know More</p>
       <h1 className="aboutHeading">About Me</h1>
       <span className="skillDesc">
-        I am Nishant Ahirao. Currently pursuing bachelor's degree in computer
-        engineering. Working on full stack / MERN development. I am very
-        enthusiastic about learning new things in devWorld. I am just starting
-        my development journey with this small step.
+        I am Nishant Ahirao. Currently Working as Backend Software Developer @
+        TCS. Experienced in designing and optimizing RESTful microservices using
+        Java and Spring Boot for financial trading systems, with strong
+        expertise in scalable system design and API performance optimization. I
+        am just starting my coorporect journey with this small step.
       </span>
       <div className="aboutBtns">
         <button
-          className={`aboutBtn ${!showAbout ? "active" : ""}`}
+          className={`aboutBtn ${showAbout === "experience" ? "active" : ""}`}
           onClick={handleExperienceClick}
         >
           <i className="uil uil-award unicons"></i>Experience
         </button>
+
         <button
-          className={`aboutBtn ${showAbout ? "active" : ""}`}
+          className={`aboutBtn ${showAbout === "certifications" ? "active" : ""}`}
+          onClick={handleCertificationsClick}
+        >
+          <i className="uil uil-trophy unicons"></i>Certifications
+        </button>
+
+        <button
+          className={`aboutBtn ${showAbout === "education" ? "active" : ""}`}
           onClick={handleEducationClick}
         >
           <i className="uil uil-book-open unicons"></i>Education
@@ -117,88 +186,49 @@ const About = () => {
       </div>
 
       <h1 className="aboutHeading2">
-        {showAbout ? "My Education" : "My Experience"}
+        {showAbout === "education"
+          ? "My Education"
+          : showAbout === "certifications"
+            ? "My Certifications"
+            : "My Experience"}
       </h1>
 
-      <VerticalTimeline key={key} lineColor="rgba(0,0,0,0.14)">
-        {showAbout
-          ? eduData.map((item, index) => (
-              <VerticalTimelineElement
-                key={index}
-                contentStyle={{
-                  // background:"#f3f4f6",
-                  // boxShadow:"none",
+      <VerticalTimeline lineColor="rgba(0,0,0,0.14)">
+        {timelineData.map((item, index) => (
+          <VerticalTimelineElement
+            key={index}
+            position={
+              showAbout === "education" || showAbout === "certifications"
+                ? undefined
+                : "right"
+            }
+            contentStyle={{
+              border: "1px solid rgba(0,0,0,0.05)",
+              textAlign: "left",
+              padding: "1rem 2rem",
+              borderRadius: "1rem",
+              boxShadow:
+                "0px 3px 1px -2px rgba(11,11,11,.2),0px 2px 2px rgba(0,0,0,.14),0px 1px 5px rgba(0,0,0,.12)",
+            }}
+            contentArrowStyle={{
+              borderRight: "0.5rem solid rgba(0,0,0,0.14)",
+            }}
+            date={item.date}
+            icon={item.icon}
+            iconStyle={{
+              background: "white",
+              fontSize: "1.5rem",
+            }}
+          >
+            <h3 style={{ margin: 0, fontWeight: 400 }}>{item.title}</h3>
 
-                  border: "1px solid rgba(0, 0, 0, 0.05)",
-                  textAlign: "left",
-                  padding: "1rem 2rem",
-                  boxShadow:
-                    "0px 3px 1px -2px rgba(11, 11, 11, 0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12)",
-                  borderRadius: "1rem",
+            <p style={{ margin: 0, fontWeight: 300, fontSize: "0.9rem" }}>
+              {item.location}
+            </p>
 
-                  // width:"fit-content"
-                }}
-                contentArrowStyle={{
-                  borderRight: "0.5rem solid rgba(0,0,0,0.14)",
-                }}
-                date={item.date}
-                icon={item.icon}
-                iconStyle={{
-                  background: "white",
-                  fontSize: "1.5rem",
-                  // border:"0.2rem solid red",
-                }}
-              >
-                <h3 style={{ margin: "0", fontWeight: "400" }}>{item.title}</h3>
-
-                <p style={{ margin: "0", fontWeight: "300" }}>
-                  {" "}
-                  {item.location}
-                </p>
-                <p style={{ margin: "0" }}>{item.description}</p>
-              </VerticalTimelineElement>
-            ))
-          : exData.map((item, index) => (
-              <VerticalTimelineElement
-                position="right"
-                key={index}
-                contentStyle={{
-                  // background:"#f3f4f6",
-                  // boxShadow:"none",
-
-                  border: "1px solid rgba(0, 0, 0, 0.05)",
-                  textAlign: "left",
-                  padding: "1rem 2rem",
-                  boxShadow:
-                    "0px 3px 1px -2px rgba(11, 11, 11, 0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12)",
-                  borderRadius: "1rem",
-                  // width:"fit-content"
-                }}
-                contentArrowStyle={{
-                  borderRight: "0.5rem solid rgba(0,0,0,0.14)",
-                }}
-                date={item.date}
-                icon={item.icon}
-                iconStyle={{
-                  background: "white",
-                  fontSize: "1.5rem",
-                  // border:"0.2rem solid red",
-                }}
-              >
-                <h3 style={{ margin: "0", fontWeight: "400" }}>
-                  {item.title}{" "}
-                </h3>
-                <p
-                  style={{ margin: "0", fontWeight: "300", fontSize: "0.9rem" }}
-                >
-                  {" "}
-                  {item.location}
-                </p>
-                <p style={{ margin: "0", fontSize: "0.9rem" }}>
-                  {item.description}
-                </p>
-              </VerticalTimelineElement>
-            ))}
+            <p style={{ margin: 0, fontSize: "0.9rem" }}>{item.description}</p>
+          </VerticalTimelineElement>
+        ))}
       </VerticalTimeline>
     </section>
   );
